@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Botines de Fútbol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            border-bottom: 5px solid blue; /* Borde azul para el encabezado */
+        }
+
+        header h1, footer p {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        .producto {
+            border: 8px solid; 
+            border-color: blue red white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1em 0;
+            padding: 1em;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+            position: relative;
+        }
+
+        .producto img {
+            max-width: 200px; 
+            height: auto;
+        }
+
+        .descripcion {
+            text-align: center;
+        }
+
+        .comprar-button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .marca-buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .marca-buttons button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    </style>
+    <script>
+        function comprarExitoso() {
+            alert('¡Compra exitosa!');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>LA CASA DEL FUTBOL</h1>
+    </header>
+    <nav>
+        <a href="#contacto">Contacto</a>
+        <a href="#adidas">Adidas</a>
+        <a href="#nike">Nike</a>
+        <a href="#direccion">Dirección</a>
+    </nav>
+    <main>
+        <section id="contacto" class="descripcion">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos a través de nuestro correo: info@lacasadelfutbol.com</p>
+            <p>Teléfono: +123 456 7890</p>
+        </section>
+        <section id="adidas" class="productos">
+            <h2>Adidas</h2>
+            <div class="producto">
+                <button class="comprar-button" onclick="comprarExitoso()">Comprar</button>
+                <img src="botin2.jpg" alt="Botines de fútbol Adidas">
+                <p>Botines con excelente tracción y soporte, ideales para cualquier tipo de terreno.</p>
+                <p>Precio: $109.990</p>
+            </div>
+        </section>
+        <section id="nike" class="productos">
+            <h2>Nike</h2>
+            <div class="producto">
+                <button class="comprar-button" onclick="comprarExitoso()">Comprar</button>
+                <img src="botin1.jpg" alt="Botines de fútbol Nike">
+                <p>Botines de fútbol de alta calidad, diseñados para jugadores profesionales y aficionados.</p>
+                <p>Precio: $100.000</p>
+            </div>
+        </section>
+        <section id="direccion" class="descripcion">
+            <h2>Dirección</h2>
+            <p>Nuestra tienda se encuentra en: Calle Fútbol 123, Ciudad salta, argentina.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Venta de Botines de Fútbol</p>
+    </footer>
+</body>
+</html>
